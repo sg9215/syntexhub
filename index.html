@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+<meta name="theme-color" content="#050608">
+<meta name="description" content="SyntexHub.com — Premium tech domain for sale. Perfect for AI startups, SaaS platforms, developer tools, cloud infrastructure, APIs, and modern tech brands.">
+<meta property="og:title" content="SyntexHub.com — Premium Domain For Sale">
+<meta property="og:description" content="A premium tech domain ideal for AI, SaaS, APIs, developer tools, and cloud infrastructure startups.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://syntexhub.com">
+<title>SyntexHub.com — Premium Domain For Sale</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+::selection { background: rgba(0,229,255,0.22); color: #fff; }
+
+:root {
+  --black: #050608;
+  --card: #111318;
+  --border: rgba(255,255,255,0.07);
+  --accent: #00e5ff;
+  --accent2: #7c3aed;
+  --accent3: #10b981;
+  --text: #f0f2f5;
+  --muted: #6b7280;
+  --pad-x: clamp(1rem, 4.5vw, 5rem);
+  --pad-section: clamp(3rem, 7vw, 7rem);
+}
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+body {
+  background: var(--black);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+}
+
+body::after {
+  content: '';
+  position: fixed; inset: 0;
+  background-image:
+    linear-gradient(rgba(0,229,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,229,255,0.025) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none; z-index: 0;
+}
+
+section, header, footer, nav,
+div.ticker-wrap, div.fomo-strip { position: relative; z-index: 1; }
+
+img, video, iframe, embed, object { max-width: 100%; display: block; }
+
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* ===== NAV ===== */
+nav {
+  position: fixed; top: 0; left: 0; right: 0;
+  display: flex; align-items: center; justify-content: space-between;
+  /* Fixed px padding so it never shifts on tiny screens */
+  padding: 0.85rem 1rem;
+  background: rgba(5,6,8,0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+  z-index: 999;
+  gap: 0.5rem;
+}
+
+.nav-logo {
+  font-family: 'Syne', sans-serif;
+  /* Tighter clamp so all 3 items fit on ~360px screens */
+  font-size: clamp(0.88rem, 3.2vw, 1.3rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.nav-logo span { color: var(--accent); }
+
+.nav-badge {
+  background: rgba(239,68,68,0.15);
+  border: 1px solid rgba(239,68,68,0.4);
+  color: #ef4444;
+  /* Aggressively small on mobile so it doesn't eat nav space */
+  font-size: clamp(0.52rem, 1.5vw, 0.7rem);
+  font-weight: 500;
+  padding: 0.22rem clamp(0.4rem, 1.5vw, 0.85rem);
+  border-radius: 100px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  animation: pulse-badge 2s infinite;
+  white-space: nowrap;
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@keyframes pulse-badge { 0%,100%{opacity:1} 50%{opacity:0.55} }
+
+.nav-cta {
+  background: var(--accent);
+  color: var(--black);
+  /* Also small on mobile, grows on wider screens */
+  font-size: clamp(0.65rem, 1.8vw, 0.82rem);
+  font-weight: 700;
+  padding: 0.45rem clamp(0.6rem, 2vw, 1.3rem);
+  border-radius: 6px;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: opacity 0.2s;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+.nav-cta:hover { opacity: 0.85; }
+
+/* Hide badge on very small screens (<340px) to protect nav layout */
+@media (max-width: 340px) {
+  .nav-badge { display: none; }
+}
+
+/* ===== HERO ===== */
+header {
+  min-height: 100svh;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  text-align: center;
+  padding: clamp(5.5rem, 12vh, 9rem) var(--pad-x) clamp(2.5rem, 5vh, 5rem);
+  overflow: hidden;
+}
+
+.hero-eyebrow {
+  font-family: 'Space Mono', monospace;
+  font-size: clamp(0.55rem, 1.8vw, 0.75rem);
+  color: var(--accent);
+  letter-spacing: 0.15em; text-transform: uppercase;
+  margin-bottom: clamp(1rem, 3vh, 1.8rem);
+  display: flex; align-items: center; gap: 0.5rem;
+  flex-wrap: wrap; justify-content: center;
+}
+.hero-eyebrow::before, .hero-eyebrow::after {
+  content: ''; display: block;
+  width: clamp(14px, 3.5vw, 32px); height: 1px;
+  background: var(--accent); opacity: 0.5;
+}
+
+.hero-domain {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2.8rem, 13vw, 10rem);
+  font-weight: 800; line-height: 0.92;
+  letter-spacing: -0.04em;
+  margin-bottom: clamp(0.8rem, 2vh, 1.2rem);
+  position: relative;
+  /* Prevent single word from breaking mid-glyph */
+  word-break: keep-all;
+  overflow-wrap: normal;
+}
+.hero-domain .part-syntex { color: var(--text); }
+.hero-domain .part-hub { color: var(--accent); }
+.hero-domain .part-tld {
+  font-size: 0.3em; color: var(--muted);
+  vertical-align: super; letter-spacing: 0; font-weight: 400;
+}
+
+.domain-glow {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(600px, 90vw); height: min(300px, 40vw);
+  background: radial-gradient(ellipse, rgba(0,229,255,0.13) 0%, transparent 70%);
+  pointer-events: none; z-index: -1;
+}
+
+.hero-sub {
+  font-size: clamp(0.85rem, 2.3vw, 1.1rem);
+  color: var(--muted); font-weight: 300;
+  max-width: min(540px, 90vw);
+  line-height: 1.7; margin-bottom: clamp(1.8rem, 4vh, 3rem);
+}
+.hero-sub strong { color: var(--text); font-weight: 500; }
+
+.hero-actions {
+  display: flex; gap: 0.75rem;
+  align-items: center; flex-wrap: wrap; justify-content: center;
+}
+
+.btn-primary {
+  background: var(--accent); color: var(--black);
+  font-size: clamp(0.82rem, 2vw, 0.95rem); font-weight: 700;
+  padding: clamp(0.7rem, 2vw, 0.9rem) clamp(1.3rem, 4vw, 2.4rem);
+  border-radius: 8px; text-decoration: none; letter-spacing: 0.01em;
+  box-shadow: 0 0 36px rgba(0,229,255,0.22);
+  transition: transform 0.15s, box-shadow 0.15s;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  display: inline-block;
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 0 56px rgba(0,229,255,0.38); }
+.btn-primary:active { transform: scale(0.97); }
+
+.btn-ghost {
+  border: 1px solid var(--border); color: var(--muted);
+  font-size: clamp(0.78rem, 1.9vw, 0.9rem);
+  padding: clamp(0.7rem, 2vw, 0.9rem) clamp(1.1rem, 3vw, 2rem);
+  border-radius: 8px; text-decoration: none;
+  transition: border-color 0.2s, color 0.2s;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  display: inline-block;
+}
+.btn-ghost:hover { border-color: rgba(255,255,255,0.2); color: var(--text); }
+
+.scroll-hint {
+  margin-top: clamp(2rem, 4vh, 4rem);
+  display: flex; flex-direction: column; align-items: center; gap: 0.4rem;
+  color: var(--muted); font-size: 0.7rem; letter-spacing: 0.1em;
+}
+.scroll-arrow {
+  width: 1px; height: 34px;
+  background: linear-gradient(to bottom, transparent, var(--muted));
+  animation: scroll-drop 2s infinite;
+}
+@keyframes scroll-drop {
+  0% { transform: translateY(-4px); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(4px); opacity: 0; }
+}
+
+/* ===== TICKER ===== */
+.ticker-wrap {
+  overflow: hidden;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: rgba(0,229,255,0.03);
+  padding: 0.7rem 0;
+}
+.ticker-track {
+  display: flex; gap: clamp(2rem, 5vw, 4rem);
+  /* Slowed to 35s per ChatGPT suggestion */
+  animation: ticker 35s linear infinite;
+  white-space: nowrap; will-change: transform;
+}
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.ticker-item {
+  font-family: 'Space Mono', monospace;
+  font-size: clamp(0.58rem, 1.6vw, 0.72rem); color: var(--muted);
+  letter-spacing: 0.1em; text-transform: uppercase;
+  display: flex; align-items: center; gap: 0.5rem; flex-shrink: 0;
+}
+.ticker-item .dot { color: var(--accent); }
+
+/* ===== SECTION ===== */
+.section {
+  padding: var(--pad-section) var(--pad-x);
+  max-width: 1200px; margin: 0 auto; width: 100%;
+}
+
+.section-label {
+  font-family: 'Space Mono', monospace;
+  font-size: clamp(0.58rem, 1.6vw, 0.7rem);
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 0.8rem;
+}
+
+.section-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(1.7rem, 4.5vw, 3.2rem);
+  font-weight: 800; line-height: 1.1;
+  letter-spacing: -0.03em; margin-bottom: 1.2rem;
+}
+
+/* ===== ANATOMY ===== */
+.anatomy-block {
+  margin: clamp(2rem, 5vw, 4rem) 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(270px, 100%), 1fr));
+  gap: 1.4rem;
+}
+
+.anatomy-card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 16px; padding: clamp(1.4rem, 4vw, 2.5rem);
+  position: relative; overflow: hidden; transition: border-color 0.3s;
+}
+.anatomy-card:hover { border-color: rgba(0,229,255,0.25); }
+.anatomy-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+}
+.anatomy-card.hub-card::before { background: linear-gradient(90deg, var(--accent2), transparent); }
+
+.anatomy-word {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2.2rem, 7vw, 3.5rem);
+  font-weight: 800; letter-spacing: -0.04em; line-height: 1;
+  color: var(--accent); margin-bottom: 0.8rem;
+}
+.anatomy-card.hub-card .anatomy-word { color: var(--accent2); }
+
+.anatomy-def {
+  font-size: clamp(0.8rem, 1.9vw, 0.88rem); color: var(--muted);
+  line-height: 1.7; margin-bottom: 1.2rem;
+}
+
+.anatomy-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.tag {
+  background: rgba(0,229,255,0.08); border: 1px solid rgba(0,229,255,0.15);
+  color: var(--accent);
+  font-size: clamp(0.6rem, 1.5vw, 0.72rem); font-weight: 500;
+  padding: 0.26rem 0.65rem; border-radius: 100px;
+  font-family: 'Space Mono', monospace; letter-spacing: 0.04em;
+}
+.anatomy-card.hub-card .tag {
+  background: rgba(124,58,237,0.1); border-color: rgba(124,58,237,0.2); color: #a78bfa;
+}
+
+/* ===== STAT GRID ===== */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
+  gap: 1rem; margin-top: clamp(2rem, 5vw, 4rem);
+}
+
+.stat-card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 12px;
+  /* Fixed internal padding so numbers never push outside */
+  padding: 1.2rem 0.8rem;
+  text-align: center; transition: border-color 0.3s, transform 0.3s;
+  /* Prevent any child from breaking the card boundary */
+  overflow: hidden;
+}
+.stat-card:hover { border-color: rgba(0,229,255,0.2); transform: translateY(-3px); }
+
+.stat-num {
+  font-family: 'Syne', sans-serif;
+  /* KEY FIX: cap max-size so "$500B+" never overflows on mobile */
+  font-size: clamp(1.5rem, 4.5vw, 2.8rem);
+  font-weight: 800; color: var(--accent);
+  letter-spacing: -0.04em; line-height: 1.1; margin-bottom: 0.4rem;
+  /* Force text to wrap inside card if still too wide */
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+.stat-label {
+  font-size: clamp(0.68rem, 1.6vw, 0.82rem); color: var(--muted); line-height: 1.5;
+}
+
+/* ===== BRAND COMP ===== */
+.brand-comparisons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(170px, 100%), 1fr));
+  gap: 1rem; margin-top: clamp(1.5rem, 4vw, 3rem);
+}
+
+.brand-card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 12px; padding: clamp(1rem, 2.8vw, 1.5rem);
+  transition: border-color 0.3s; overflow: hidden;
+}
+.brand-card:hover { border-color: rgba(255,255,255,0.15); }
+
+.brand-name {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(1rem, 2.8vw, 1.3rem);
+  font-weight: 800; letter-spacing: -0.03em; margin-bottom: 0.35rem;
+  word-break: break-word;
+}
+.brand-val {
+  font-family: 'Space Mono', monospace;
+  font-size: clamp(0.6rem, 1.5vw, 0.7rem); color: var(--accent3); letter-spacing: 0.05em;
+}
+.brand-similar {
+  margin-top: 0.65rem;
+  font-size: clamp(0.7rem, 1.7vw, 0.78rem); color: var(--muted); line-height: 1.5;
+}
+
+/* ===== INDUSTRIES ===== */
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(230px, 100%), 1fr));
+  gap: 1.1rem; margin-top: clamp(1.5rem, 4vw, 3rem);
+}
+
+.industry-item {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 12px; padding: clamp(1.1rem, 2.8vw, 1.8rem);
+  display: flex; flex-direction: column; gap: 0.45rem;
+  transition: border-color 0.3s, transform 0.3s;
+}
+.industry-item:hover { border-color: rgba(0,229,255,0.2); transform: translateY(-3px); }
+
+.industry-icon { font-size: clamp(1.3rem, 3.5vw, 1.8rem); }
+.industry-name {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(0.88rem, 2.2vw, 1rem); font-weight: 700;
+}
+.industry-desc { font-size: clamp(0.75rem, 1.7vw, 0.82rem); color: var(--muted); line-height: 1.6; }
+
+/* ===== FOMO STRIP ===== */
+.fomo-strip {
+  background: linear-gradient(135deg, rgba(0,229,255,0.05), rgba(124,58,237,0.08));
+  border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+  padding: clamp(2.5rem, 7vw, 5rem) var(--pad-x);
+  text-align: center; overflow: hidden;
+}
+
+.fomo-headline {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(1.4rem, 4.2vw, 3rem);
+  font-weight: 800; letter-spacing: -0.04em; line-height: 1.15; margin-bottom: 1rem;
+}
+
+.fomo-sub {
+  color: var(--muted); max-width: min(480px, 90vw); margin: 0 auto 1.5rem;
+  font-size: clamp(0.82rem, 2vw, 0.95rem); line-height: 1.7;
+}
+
+.fomo-cards {
+  display: flex; gap: 0.6rem; justify-content: center;
+  flex-wrap: wrap; margin-top: 1.5rem;
+}
+
+.fomo-pill {
+  background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.25);
+  color: #f87171; font-family: 'Space Mono', monospace;
+  font-size: clamp(0.6rem, 1.5vw, 0.75rem); letter-spacing: 0.04em;
+  padding: 0.42rem clamp(0.65rem, 1.8vw, 1.2rem); border-radius: 100px;
+}
+
+/* ===== VALUE ===== */
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+  gap: clamp(1.1rem, 3vw, 2rem); margin-top: clamp(1.5rem, 4vw, 3rem);
+}
+
+.value-item { display: flex; gap: 1rem; align-items: flex-start; }
+
+.value-icon-box {
+  flex-shrink: 0;
+  width: clamp(36px, 7vw, 44px); height: clamp(36px, 7vw, 44px);
+  background: rgba(0,229,255,0.08); border: 1px solid rgba(0,229,255,0.15);
+  border-radius: 10px; display: flex; align-items: center; justify-content: center;
+  font-size: clamp(0.9rem, 2.3vw, 1.1rem);
+}
+
+.value-text h3 {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(0.88rem, 2vw, 1rem); font-weight: 700; margin-bottom: 0.25rem;
+}
+.value-text p { font-size: clamp(0.75rem, 1.7vw, 0.83rem); color: var(--muted); line-height: 1.6; }
+
+/* ===== CTA ===== */
+.cta-section {
+  padding: clamp(3.5rem, 8vw, 8rem) var(--pad-x);
+  text-align: center; max-width: min(700px, 100%);
+  margin: 0 auto; width: 100%;
+}
+
+.cta-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(1.9rem, 5.5vw, 4rem);
+  font-weight: 800; letter-spacing: -0.04em; line-height: 1.05; margin-bottom: 1.2rem;
+}
+.cta-title .accent { color: var(--accent); }
+
+.cta-sub {
+  font-size: clamp(0.85rem, 2vw, 1rem); color: var(--muted);
+  line-height: 1.7; margin-bottom: clamp(1.8rem, 4vw, 3rem);
+}
+
+.cta-email-block {
+  background: var(--card); border: 1px solid rgba(0,229,255,0.2);
+  border-radius: 16px; padding: clamp(1.4rem, 4.5vw, 2.5rem);
+  margin-bottom: 1.5rem; overflow: hidden;
+}
+
+.cta-label {
+  font-family: 'Space Mono', monospace;
+  font-size: clamp(0.58rem, 1.6vw, 0.7rem); letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--muted); margin-bottom: 0.65rem;
+}
+
+.cta-email-addr {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(1rem, 4vw, 2rem); font-weight: 800;
+  color: var(--accent); letter-spacing: -0.02em;
+  text-decoration: none; display: block;
+  margin-bottom: 1rem;
+  /* Break long email on tiny screens */
+  word-break: break-all;
+  transition: opacity 0.2s;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+.cta-email-addr:hover { opacity: 0.7; }
+
+.cta-note { font-size: clamp(0.72rem, 1.7vw, 0.8rem); color: var(--muted); line-height: 1.6; }
+
+.cta-urgency {
+  display: flex; align-items: center; justify-content: center;
+  gap: 0.5rem; flex-wrap: wrap;
+  font-size: clamp(0.65rem, 1.6vw, 0.8rem); color: #f87171;
+  font-family: 'Space Mono', monospace; margin-bottom: 1.4rem;
+}
+.urgency-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: #ef4444; flex-shrink: 0; animation: blink 1.4s infinite;
+}
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+/* ===== FOOTER ===== */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 1.6rem var(--pad-x);
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 0.7rem;
+  color: var(--muted); font-size: clamp(0.65rem, 1.6vw, 0.78rem);
+}
+.footer-logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: clamp(0.88rem, 2.3vw, 1rem); }
+.footer-logo span { color: var(--accent); }
+
+/* ===== REVEAL ANIMATION ===== */
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.55s ease, transform 0.55s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ===== LANDSCAPE MOBILE ===== */
+@media (max-height: 500px) and (orientation: landscape) {
+  header { min-height: auto; padding: 5rem var(--pad-x) 2.5rem; }
+  .scroll-hint { display: none; }
+  .hero-domain { font-size: clamp(2.2rem, 9vw, 5rem); }
+}
+
+/* ===== DESKTOP OVERRIDES ===== */
+@media (min-width: 900px) {
+  nav { padding: 1.1rem var(--pad-x); }
+  .anatomy-block { grid-template-columns: repeat(2, 1fr); }
+  .stat-grid { grid-template-columns: repeat(3, 1fr); }
+  .brand-comparisons { grid-template-columns: repeat(4, 1fr); }
+  .industries-grid { grid-template-columns: repeat(3, 1fr); }
+  .value-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ===== VERY SMALL (<360px) ===== */
+@media (max-width: 360px) {
+  .nav-badge { display: none; }
+  .hero-eyebrow::before, .hero-eyebrow::after { display: none; }
+  footer { flex-direction: column; text-align: center; align-items: center; }
+}
+
+/* ===== TABLET (600-900px) ===== */
+@media (min-width: 600px) and (max-width: 899px) {
+  .stat-grid { grid-template-columns: repeat(3, 1fr); }
+  .brand-comparisons { grid-template-columns: repeat(2, 1fr); }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Syntex<span>Hub</span>.com</div>
+  <div class="nav-badge">🔴 Available Now</div>
+  <a href="mailto:syntexhub@gmail.com" class="nav-cta">Make an Offer</a>
+</nav>
+
+<!-- HERO -->
+<header>
+  <div class="hero-eyebrow">Premium Tech Domain · Available for Acquisition</div>
+  <div class="hero-domain">
+    <div class="domain-glow"></div>
+    <span class="part-syntex">Syntex</span><span class="part-hub">Hub</span><span class="part-tld">.com</span>
+  </div>
+  <p class="hero-sub">
+    A domain that sounds like it's already a <strong>billion-dollar company</strong>.<br>
+    The intersection of code intelligence and platform connectivity — before someone else claims it.
+  </p>
+  <div class="hero-actions">
+    <a href="mailto:syntexhub@gmail.com" class="btn-primary">Acquire This Domain →</a>
+    <a href="#anatomy" class="btn-ghost">See Why It Matters</a>
+  </div>
+  <div class="scroll-hint"><span>scroll</span><div class="scroll-arrow"></div></div>
+</header>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <span class="ticker-item"><span class="dot">◆</span> .com domain · 9 characters</span>
+    <span class="ticker-item"><span class="dot">◆</span> instantly memorable</span>
+    <span class="ticker-item"><span class="dot">◆</span> zero ambiguity in pronunciation</span>
+    <span class="ticker-item"><span class="dot">◆</span> strong brand recognition potential</span>
+    <span class="ticker-item"><span class="dot">◆</span> tech-native identity</span>
+    <span class="ticker-item"><span class="dot">◆</span> no trademark conflicts detected</span>
+    <span class="ticker-item"><span class="dot">◆</span> billion-dollar company aesthetic</span>
+    <span class="ticker-item"><span class="dot">◆</span> .com domain · 9 characters</span>
+    <span class="ticker-item"><span class="dot">◆</span> instantly memorable</span>
+    <span class="ticker-item"><span class="dot">◆</span> zero ambiguity in pronunciation</span>
+    <span class="ticker-item"><span class="dot">◆</span> strong brand recognition potential</span>
+    <span class="ticker-item"><span class="dot">◆</span> tech-native identity</span>
+    <span class="ticker-item"><span class="dot">◆</span> no trademark conflicts detected</span>
+    <span class="ticker-item"><span class="dot">◆</span> billion-dollar company aesthetic</span>
+  </div>
+</div>
+
+<!-- ANATOMY -->
+<section class="section reveal" id="anatomy">
+  <div class="section-label">// Domain Anatomy</div>
+  <h2 class="section-title">Two words.<br>Infinite potential.</h2>
+  <div class="anatomy-block">
+    <div class="anatomy-card">
+      <div class="anatomy-word">Syntex</div>
+      <p class="anatomy-def">Derived from <strong style="color:#e2e8f0">syntax</strong> — the foundational grammar of every programming language, AI model, and data system ever built. Signals technical authority, precision, and intelligence.</p>
+      <div class="anatomy-tags">
+        <span class="tag">code intelligence</span>
+        <span class="tag">AI / LLMs</span>
+        <span class="tag">dev tools</span>
+        <span class="tag">data structures</span>
+        <span class="tag">compilers</span>
+      </div>
+    </div>
+    <div class="anatomy-card hub-card">
+      <div class="anatomy-word">Hub</div>
+      <p class="anatomy-def">The universal signal for <strong style="color:#e2e8f0">platform &amp; ecosystem</strong>. GitHub. Docker Hub. HubSpot. The word "Hub" alone has built companies worth hundreds of billions. It implies connection, scale, and community.</p>
+      <div class="anatomy-tags">
+        <span class="tag">platform play</span>
+        <span class="tag">ecosystem</span>
+        <span class="tag">marketplace</span>
+        <span class="tag">SaaS</span>
+        <span class="tag">developer tools</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section reveal">
+  <div class="section-label">// By The Numbers</div>
+  <h2 class="section-title">The market is<br>already enormous.</h2>
+  <div class="stat-grid">
+    <div class="stat-card"><div class="stat-num">$1.8T</div><div class="stat-label">Global developer tools &amp; cloud infrastructure market by 2030</div></div>
+    <div class="stat-card"><div class="stat-num">28M+</div><div class="stat-label">Software developers globally who instantly relate to "Syntex"</div></div>
+    <div class="stat-card"><div class="stat-num">9 chars</div><div class="stat-label">Short, clean, memorable. Ideal for brand recall &amp; SEO authority</div></div>
+    <div class="stat-card"><div class="stat-num">$500B+</div><div class="stat-label">Combined value of companies with "Hub" in their brand identity</div></div>
+    <div class="stat-card"><div class="stat-num">0</div><div class="stat-label">Other companies using this exact combination — it's 100% yours</div></div>
+    <div class="stat-card"><div class="stat-num">.com</div><div class="stat-label">The only extension that commands global trust and authority</div></div>
+  </div>
+</section>
+
+<!-- BRAND COMPARISONS -->
+<section class="section reveal">
+  <div class="section-label">// Brand Context</div>
+  <h2 class="section-title">It already sounds<br>like it belongs here.</h2>
+  <div class="brand-comparisons">
+    <div class="brand-card">
+      <div class="brand-name" style="color:#f97316;">GitHub</div>
+      <div class="brand-val">$7.5B acquisition</div>
+      <div class="brand-similar">Hub for code. Microsoft acquired it for this exact reason.</div>
+    </div>
+    <div class="brand-card">
+      <div class="brand-name" style="color:#2563eb;">HubSpot</div>
+      <div class="brand-val">$30B+ market cap</div>
+      <div class="brand-similar">Hub for marketing. Built an empire on one word.</div>
+    </div>
+    <div class="brand-card">
+      <div class="brand-name" style="color:#0ea5e9;">Docker Hub</div>
+      <div class="brand-val">Industry standard</div>
+      <div class="brand-similar">Hub for containers. Now critical infrastructure globally.</div>
+    </div>
+    <div class="brand-card">
+      <div class="brand-name" style="color:#00e5ff;">SyntexHub</div>
+      <div class="brand-val" style="color:#10b981;">← This could be you</div>
+      <div class="brand-similar">Hub for code intelligence. The next chapter — unclaimed.</div>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="section reveal">
+  <div class="section-label">// Target Industries</div>
+  <h2 class="section-title">Every major tech<br>vertical wants this.</h2>
+  <div class="industries-grid">
+    <div class="industry-item"><div class="industry-icon">🤖</div><div class="industry-name">AI &amp; LLM Platforms</div><div class="industry-desc">Syntax is the language of AI training. An AI coding assistant named SyntexHub is a natural fit — and a brand that writes itself.</div></div>
+    <div class="industry-item"><div class="industry-icon">⚡</div><div class="industry-name">Developer Tools</div><div class="industry-desc">IDEs, linters, code review platforms — every dev tool company needs a name that commands technical respect from day one.</div></div>
+    <div class="industry-item"><div class="industry-icon">☁️</div><div class="industry-name">Cloud Infrastructure</div><div class="industry-desc">Infrastructure platforms need authority. SyntexHub signals both the precision of code and the scale of a platform.</div></div>
+    <div class="industry-item"><div class="industry-icon">🔗</div><div class="industry-name">API Marketplaces</div><div class="industry-desc">An API hub powered by syntex intelligence. This domain is a complete brand story for any API or integration business.</div></div>
+    <div class="industry-item"><div class="industry-icon">🎓</div><div class="industry-name">EdTech &amp; Learning</div><div class="industry-desc">The world's hub for learning syntax, code, and programming. Massive addressable market with viral brand potential.</div></div>
+    <div class="industry-item"><div class="industry-icon">🛡️</div><div class="industry-name">Cybersecurity</div><div class="industry-desc">Code analysis, vulnerability scanning, threat detection — security firms built on code inspection are a natural owner of this domain.</div></div>
+  </div>
+</section>
+
+<!-- FOMO STRIP -->
+<div class="fomo-strip reveal">
+  <div style="max-width:min(600px,100%); margin:0 auto;">
+    <h2 class="fomo-headline">Someone will build the next GitHub on this domain.<br><span style="color:var(--accent);">Will it be you?</span></h2>
+    <p class="fomo-sub">Premium .com domains with real brand resonance are claimed every day. This one won't stay available forever — and whoever gets it first, wins the namespace.</p>
+    <div class="fomo-cards">
+      <div class="fomo-pill">⚠ Active interest from multiple parties</div>
+      <div class="fomo-pill">⚠ First-mover advantage is everything</div>
+      <div class="fomo-pill">⚠ .com is finite. Great names are not</div>
+    </div>
+  </div>
+</div>
+
+<!-- VALUE PROPS -->
+<section class="section reveal">
+  <div class="section-label">// Why This Domain Wins</div>
+  <h2 class="section-title">Built-in brand equity<br>from day one.</h2>
+  <div class="value-grid">
+    <div class="value-item"><div class="value-icon-box">⚡</div><div class="value-text"><h3>Instant Credibility</h3><p>SyntexHub sounds like a Series B company before you've written a single line of code. The name does the positioning work for you.</p></div></div>
+    <div class="value-item"><div class="value-icon-box">🔍</div><div class="value-text"><h3>SEO Authority</h3><p>Short, meaningful .com domains with keyword relevance dominate search rankings. "Syntex" + "Hub" are both high-intent tech keywords.</p></div></div>
+    <div class="value-item"><div class="value-icon-box">🧠</div><div class="value-text"><h3>Unforgettable Recall</h3><p>9 characters. 2 syllables each. Perfectly balanced phonetics. Users who hear it once remember it forever — a rare trait in domain naming.</p></div></div>
+    <div class="value-item"><div class="value-icon-box">🌐</div><div class="value-text"><h3>Global Appeal</h3><p>Both words translate cleanly across languages and cultures. No regional slang, no mispronunciation risk — pure global scalability.</p></div></div>
+    <div class="value-item"><div class="value-icon-box">🚀</div><div class="value-text"><h3>VC-Ready Identity</h3><p>Investors judge companies by their first impression. A domain like SyntexHub signals ambition, tech-nativeness, and vision before your pitch begins.</p></div></div>
+    <div class="value-item"><div class="value-icon-box">🏆</div><div class="value-text"><h3>Defensible Moat</h3><p>Own the .com and you own the identity. No competitor can claim this namespace. The domain itself becomes a strategic asset on your balance sheet.</p></div></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="position:relative;z-index:1;">
+  <div class="cta-section">
+    <div class="cta-urgency">
+      <div class="urgency-dot"></div>
+      <span>Domain is live and available · Negotiate directly with owner</span>
+    </div>
+    <h2 class="cta-title">Ready to own<br><span class="accent">SyntexHub.com</span>?</h2>
+    <p class="cta-sub">This is a negotiated sale — no auction, no bidding wars. Reach out directly, state your intent, and let's talk price.</p>
+    <div class="cta-email-block">
+      <div class="cta-label">Send your offer to</div>
+      <a href="mailto:syntexhub@gmail.com" class="cta-email-addr">syntexhub@gmail.com</a>
+      <p class="cta-note">Mention your intended use case for faster response. All serious inquiries will receive a reply within 24 hours.</p>
+    </div>
+    <a href="mailto:syntexhub@gmail.com?subject=Domain%20Acquisition%20Inquiry%3A%20SyntexHub.com&body=Hi%2C%0A%0AI%27m%20interested%20in%20acquiring%20SyntexHub.com.%0A%0AMy%20intended%20use%20case%3A%20%0AMy%20offer%3A%20%0A%0ALooking%20forward%20to%20hearing%20from%20you." class="btn-primary" style="font-size:clamp(0.85rem,2vw,1rem);padding:clamp(0.8rem,2.5vw,1rem) clamp(1.5rem,4.5vw,2.8rem);">
+      Send Acquisition Offer →
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Syntex<span>Hub</span>.com</div>
+  <div>Premium domain for sale · syntexhub@gmail.com</div>
+  <!-- Fixed: updated to 2026 -->
+  <div style="font-family:'Space Mono',monospace;">© 2026 SyntexHub</div>
+</footer>
+
+<script>
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.07 });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
